@@ -92,43 +92,49 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Question 1</h1> <!--page title-->
 	</div>
 	
     	<div id="content" class="w3-container">
-        	<p>Are your eyes watery or itchy?</p>
-		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+        	<p>Are your eyes watery or itchy?</p> <!--text on page (question)-->
+		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--button to next page; adds 1 to allergy count-->
+         	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!--button to next page; adds 1 to cold count-->
     	</div>
 </div>
 
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+		<h1>Question 2</h1> <!--page title-->
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have a fever?</p>
+		<p>Do you have a fever?</p> <!--text on page (question)-->
+		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--button to next page; adds 1 to cold count-->
+         	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!--button to next page; adds 1 to allergy count-->
 	</div>
 </div>	
 	
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 3</h1>
+		<h1>Question 3</h1> <!-- page title -->
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have a sore throat?</p>
+		<p>Do you have a sore throat?</p> <!-- text on page (question) -->
+		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--button to next page; adds 1 to cold count-->
+         	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!--button to next page; adds 1 to allergy count-->
 	</div>
 </div>	
 	
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 4</h1>
+		<h1>Question 4</h1> <!-- page title -->
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Are your symptoms seasonal or chronic?</p>
+		<p>Are your symptoms seasonal or chronic?</p> <!-- text on page (question) -->
+		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--button to next page; adds 1 to allergy count-->
+         	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!--button to next page; adds 1 to cold count-->
 	</div>
 </div>
 
