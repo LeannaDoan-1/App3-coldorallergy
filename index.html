@@ -35,25 +35,25 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
    </head> <!--end of header section-->
 
 
-<script> <!--beginning of JavaScript section-->
-        var allergy_count = 0; <!--"allergy_count" variable declaration & initialization-->
-        var cold_count = 0; <!--"cold_count" variable declaration & initialization-->
+<script> //beginning of JavaScript section
+        var allergy_count = 0; //"allergy_count" variable declaration & initialization
+        var cold_count = 0; //"cold_count" variable declaration & initialization
 
 
-        function allergyAdd(){ <!--"allergyAdd" function declaration-->
-            allergy_count = allergy_count + 1; <!--code that is executed-->
+        function allergyAdd(){ //"allergyAdd" function declaration
+            allergy_count = allergy_count + 1; //code that is executed
 
         }
 
-        function coldAdd(){ <!--"coldAdd" function declaration-->
-            cold_count = cold_count + 1; <!--code that is executed-->
+        function coldAdd(){ //"coldAdd" function declaration
+            cold_count = cold_count + 1; //code that is executed
         }
 	
-	function resultspercentage(){ <!--"resultspercentage" function declaration-->
-		var resultText = document.getElementById("results"); <!--captures content of paragraph on p. 5-->
-		var coldpercentage = (cold_count/4)*100; <!--calculates probability of cold-->
-		var allergypercentage = (allergy_count/4)*100; <!--calculates probability of allergies-->
-		resultText.innerHTML = "Probability it is allergies =" + allergypercentage + "%" + "<br> Probability it is a cold =" + coldpercentage + "%"; <!--innerHTML command; changes what is b/w <p id="results"></p> tags-->
+	function resultspercentage(){ //"resultspercentage" function declaration
+		var resultText = document.getElementById("results"); //captures content of paragraph on p. 5
+		var coldpercentage = (cold_count/4)*100; //calculates probability of cold
+		var allergypercentage = (allergy_count/4)*100; //calculates probability of allergies
+		resultText.innerHTML = "Probability it is allergies =" + allergypercentage + "%" + "<br> Probability it is a cold =" + coldpercentage + "%"; //innerHTML command; changes what is b/w <p id="results"></p> tags
 	}
   </script> <!--end of JavaScript section-->
 
