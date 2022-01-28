@@ -17,49 +17,49 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of this code is to help users distinguish between a cold and allergies. The app allows users to answer a series of questions regarding their symptoms and, based on this information, calculates and displays the probability that the user has a cold and the probability that they have allergies.
  
 Known Issues:
-blah, blah, blah, blah
+None.
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
-   <head> 
-      <title>Hello World</title>  
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <link rel="stylesheet" href="w3.css">
-      <link rel="stylesheet" href="w3-colors-flat.css">
-   </head> 
+   <head> <!--beginning of header section-->
+      <title>Hello World</title>  <!--displays title of page-->
+      <meta name="viewport" content="width=device-width, initial-scale=1"> <!--important information about page that is not intended to be displayed-->
+      <meta name="apple-mobile-web-app-capable" content="yes"> <!--important information about page that is not intended to be displayed-->
+      <link rel="stylesheet" href="w3.css"> <!--information for web-related aspects of app; reasonable display size-->
+      <link rel="stylesheet" href="w3-colors-flat.css"> <!--information for web-related aspects of app; signals to smartphones that they should allow user to save shortcut on homepage-->
+   </head> <!--end of header section-->
 
 
-<script>
-        var allergy_count = 0;
-        var cold_count = 0;
+<script> <!--beginning of JavaScript section-->
+        var allergy_count = 0; <!--"allergy_count" variable declaration & initialization-->
+        var cold_count = 0; <!--"cold_count" variable declaration & initialization-->
 
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
+        function allergyAdd(){ <!--"allergyAdd" function declaration-->
+            allergy_count = allergy_count + 1; <!--code that is executed-->
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function coldAdd(){ <!--"coldAdd" function declaration-->
+            cold_count = cold_count + 1; <!--code that is executed-->
         }
 	
-	function resultspercentage(){
-		var resultText = document.getElementById("results");
-		var coldpercentage = (cold_count/4)*100;
-		var allergypercentage = (allergy_count/4)*100;
-		resultText.innerHTML = "Probability it is allergies =" + allergypercentage + "%" + "<br> Probability it is a cold =" + coldpercentage + "%"; 
+	function resultspercentage(){ <!--"resultspercentage" function declaration-->
+		var resultText = document.getElementById("results"); <!--captures content of paragraph on p. 5-->
+		var coldpercentage = (cold_count/4)*100; <!--calculates probability of cold-->
+		var allergypercentage = (allergy_count/4)*100; <!--calculates probability of allergies-->
+		resultText.innerHTML = "Probability it is allergies =" + allergypercentage + "%" + "<br> Probability it is a cold =" + coldpercentage + "%"; <!--innerHTML command; changes what is b/w <p id="results"></p> tags-->
 	}
-  </script>
+  </script> <!--end of JavaScript section-->
 
 
-
-<style>	
+<!--beginning of CSS section-->
+<style>
 .body {
      margin: 0em;
 }
@@ -79,45 +79,45 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     left: 0vw;
     z-index: 1;
 }
-</style>
+</style> <!--end of CSS section-->
 
-<body>
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
-</div>
+<body> <!--contains content to be displayed-->
+<!--beginning of division--> <div id="header" class="w3-container w3-flat-carrot"> <!--title page header-->
+	<h1>Cold or Allergies?</h1> <!--topmost heading on title page-->
+</div> <!--end of division-->
 	
-<div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+<div id="content" class="w3-container"> <!--beginning of division-->
+	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p> <!--text on title page-->
 	
-	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!--"Get Started" button-->
 	
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p> <!--text on title page-->
  	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> <!--text on title page-->
 
-<div class="page" id="one">
-	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1> <!--page title-->
-	</div>
+<div class="page" id="one"> <!--beginning of division (page 1)-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!--beginning of division (header)-->
+		<h1>Question 1</h1> <!--topmost heading on page 1-->
+	</div> <!--end of division (header)-->
 	
-    	<div id="content" class="w3-container">
+    	<div id="content" class="w3-container"> <!--beginning of division (content)-->
         	<p>Are your eyes watery or itchy?</p> <!--text on page (question)-->
 		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--button to next page; adds 1 to allergy count-->
          	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!--button to next page; adds 1 to cold count-->
-    	</div>
-</div>
+    	</div> <!--end of division (content)-->
+</div> <!--end of division (page 1)-->
 
-<div class="page" id="two">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1> <!--page title-->
-	</div>
+<div class="page" id="two"> <!--beginning of division (page 2)-->
+	<div class="w3-container w3-flat-carrot"> <!--beginning of division-->
+		<h1>Question 2</h1> <!--topmost heading on page 2-->
+	</div> <!--end of division-->
 	
-	<div id="content" class="w3-container">
+	<div id="content" class="w3-container"> <!--beginning of division (content)-->
 		<p>Do you have a fever?</p> <!--text on page (question)-->
 		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--button to next page; adds 1 to cold count-->
          	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!--button to next page; adds 1 to allergy count-->
-	</div>
-</div>	
+	</div> <!--end of division (content)-->
+</div>	<!--end of division (page 2)-->
 	
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
