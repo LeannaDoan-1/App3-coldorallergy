@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html> 
+<html> <!--beginning of HTML file-->
 <!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
  
 THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
@@ -58,8 +58,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   </script> <!--end of JavaScript section-->
 
 
-<!--beginning of CSS section-->
-<style>
+<style> /*beginning of CSS section*/
 .body {
      margin: 0em;
 }
@@ -81,7 +80,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 }
 </style> <!--end of CSS section-->
 
-<body> <!--contains content to be displayed-->
+<body> <!--beginning of body (contains content to be displayed)-->
 <!--beginning of division--> <div id="header" class="w3-container w3-flat-carrot"> <!--title page header-->
 	<h1>Cold or Allergies?</h1> <!--topmost heading on title page-->
 </div> <!--end of division-->
@@ -119,45 +118,45 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div> <!--end of division (content)-->
 </div>	<!--end of division (page 2)-->
 	
-<div class="page" id="three">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Question 3</h1> <!-- page title -->
-	</div>
+<div class="page" id="three"> <!--beginning of division (page 3)-->
+	<div class="w3-container w3-flat-carrot"> <!--beginning of division-->
+		<h1>Question 3</h1> <!--topmost heading on page 3-->
+	</div> <!--end of division-->
 	
-	<div id="content" class="w3-container">
+	<div id="content" class="w3-container"> <!--beginning of division (content)-->
 		<p>Do you have a sore throat?</p> <!-- text on page (question) -->
 		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--button to next page; adds 1 to cold count-->
          	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!--button to next page; adds 1 to allergy count-->
-	</div>
-</div>	
+	</div> <!--end of division (content)-->
+</div> <!--end of division (page 3)-->
 	
-<div class="page" id="four">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Question 4</h1> <!-- page title -->
-	</div>
+<div class="page" id="four"> <!--beginning of division (page 4)-->
+	<div class="w3-container w3-flat-carrot"> <!--beginning of division-->
+		<h1>Question 4</h1> <!--topmost heading on page 4-->
+	</div> <!--end of division-->
 	
-	<div id="content" class="w3-container">
+	<div id="content" class="w3-container"> <!--beginning of division (content)-->
 		<p>Are your symptoms seasonal or chronic?</p> <!-- text on page (question) -->
 		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--button to next page; adds 1 to allergy count-->
          	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!--button to next page; adds 1 to cold count-->
-	</div>
-</div>
+	</div> <!--end of division (content)-->
+</div> <!--end of division (page 4)-->
 	
-<div class="page" id="five">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Results</h1> <!-- page title -->
-	</div>
+<div class="page" id="five"> <!--beginning of division (page 5)-->
+	<div class="w3-container w3-flat-carrot"> <!--beginning of division-->
+		<h1>Results</h1> <!--topmost heading on page 5-->
+	</div> <!--end of division-->
 	
-	<div id="content" class="w3-container">
+	<div id="content" class="w3-container"> <!--beginning of division (content)-->
 		<a onclick="resultspercentage();" class="w3-btn w3-black">Results</a> <!--button to view results-->
 		<p id="results"></p> <!--indicates where results will be displayed-->
-	</div>
-</div>
+	</div> <!--end of division (content)-->
+</div> <!--end of division (page 5)-->
 
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
-</footer>
+<footer class="w3-bottom w3-container w3-flat-carrot"> <!--beginning of footer-->
+	<p>DIY!</p> <!--text in footer-->
+</footer> <!--end of footer-->
 
-</body>
-</html>
+</body> <!--end of body-->
+</html> <!--end of HTML file-->
 	
